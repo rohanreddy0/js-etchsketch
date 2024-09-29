@@ -9,6 +9,16 @@ grid_size_picker.addEventListener('change', () => {
     addHoverListeners();
 });
 
+// Get color
+let square_color_picker = document.querySelector('#square-color');
+let square_color = square_color_picker.value;
+square_color_picker.addEventListener('change', () => {
+    square_color = square_color_picker.value;
+    page_container.innerHTML = '';
+    rowPropagate();
+    addHoverListeners();
+})
+
 // Create grids
 let page_container = document.querySelector('#page-container');
 
@@ -39,7 +49,7 @@ function addHoverListeners() {
     const squares = document.querySelectorAll('.grid-square');
     for (let i = 0; i < squares.length; i++) {
         squares[i].addEventListener('mouseover', () => {
-            squares[i].style.backgroundColor = 'red';
+            squares[i].style.backgroundColor = square_color;
         });
         squares[i].addEventListener('mouseout', () => {
             squares[i].style.backgroundColor = '#BBBBBB';
