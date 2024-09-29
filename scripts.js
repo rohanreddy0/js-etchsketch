@@ -1,4 +1,4 @@
-let grid_size = 10;
+let grid_size = 16;
 
 let page_container = document.querySelector('#page-container');
 
@@ -33,12 +33,4 @@ for (let i = 0; i <= squares.length; i++) {
         squares[i].style.backgroundColor = '#BBBBBB';
     })
 }
-
-// square.addEventListener('mouseover', (event) => {
-//     square.style.backgroundColor = 'red';
-// });
-//
-// square.addEventListener('mouseout', (event) => {
-//     square.style.backgroundColor = '#BBBBBB';
-// })
 
