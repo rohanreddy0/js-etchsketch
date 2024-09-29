@@ -33,21 +33,5 @@ function rowPropagate() {
     }
 }
 
-
-// Add hover listeners to all squares
-function addHoverListeners() {
-    const squares = document.querySelectorAll('.grid-square');
-    for (let i = 0; i < squares.length; i++) {
-        squares[i].addEventListener('mouseover', () => {
-            squares[i].style.backgroundColor = 'red';
-        });
-        squares[i].addEventListener('mouseout', () => {
-            squares[i].style.backgroundColor = '#BBBBBB';
-        });
-    }
-}
-
 // Runtime Code
 rowPropagate();
-addHoverListeners();
-
