@@ -18,7 +18,7 @@ body {
     display: flex;
 }
 
-.grid-row {
+.grid-square {
     background-color: #BBBBBB;
     border-radius: 10px;
     border: 1px solid red;
