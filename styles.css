@@ -8,9 +8,14 @@ body {
     width: 100vw;
     margin: 0;
     padding: 0;
+    display: flex;
 }
 
-.grid-container {
+.grid-row {
     background-color: #BBBBBB;
+    border-radius: 10px;
+    border: 1px solid red;
+    width: 80px;
+    height: 80px;
 }
 
