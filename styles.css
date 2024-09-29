@@ -9,13 +9,20 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid-row-container {
+    display: flex;
 }
 
 .grid-row {
     background-color: #BBBBBB;
     border-radius: 10px;
     border: 1px solid red;
-    width: 80px;
-    height: 80px;
+    width: 40px;
+    height: 40px;
 }
 
