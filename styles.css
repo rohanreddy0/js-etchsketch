@@ -40,5 +40,10 @@ body {
 .grid-square {
     background-color: #BBBBBB;
     border: 1px solid black;
+    transition: background-color ease-out 0.5s;
+}
+
+.grid-square:hover {
+    transition: background-color 0s;
 }
 
