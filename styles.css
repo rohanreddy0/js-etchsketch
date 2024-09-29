@@ -1,5 +1,20 @@
 body {
     margin: 0;
+    font-family: Helvetica, sans-serif;
+}
+
+#header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 64px;
+    background-color: #111111;
+    color: white;
+}
+
+#header-text {
+    margin: 0;
+    font-size: 24px;
 }
 
 #page-container {
