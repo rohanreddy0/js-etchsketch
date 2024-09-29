@@ -22,13 +22,23 @@ function rowPropagate () {
 // Runtime Code
 rowPropagate();
 
-const square = document.querySelector('.grid-square');
+const squares = document.querySelectorAll('.grid-square');
+console.log(squares);
 
-square.addEventListener('mouseover', (event) => {
-    square.style.backgroundColor = 'red';
-});
+for (let i = 0; i <= squares.length; i++) {
+    squares[i].addEventListener('mouseover', (event) => {
+        squares[i].style.backgroundColor = 'red';
+    });
+    squares[i].addEventListener('mouseout', (event) => {
+        squares[i].style.backgroundColor = '#BBBBBB';
+    })
+}
 
-square.addEventListener('mouseout', (event) => {
-    square.style.backgroundColor = '#BBBBBB';
-})
+// square.addEventListener('mouseover', (event) => {
+//     square.style.backgroundColor = 'red';
+// });
+//
+// square.addEventListener('mouseout', (event) => {
+//     square.style.backgroundColor = '#BBBBBB';
+// })
 
