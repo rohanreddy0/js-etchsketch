@@ -1,0 +1,16 @@
+body {
+    margin: 0;
+}
+
+#page-container {
+    background-color: #212121;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+}
+
+.grid-container {
+    background-color: #BBBBBB;
+}
+
