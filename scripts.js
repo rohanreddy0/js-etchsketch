@@ -16,8 +16,12 @@ function createGridRow() {
     const gridRowContainer = document.createElement('div');
     gridRowContainer.classList.add('grid-row-container');
     for (let i = 1; i <= grid_size; i++) {
+        let square_side = (0.7*window.innerHeight) / (grid_size);
+        console.log(square_side);
         const gridSquare = document.createElement('div');
         gridSquare.classList.add('grid-square');
+        gridSquare.style.width = square_side+'px';
+        gridSquare.style.height = square_side+'px';
         gridRowContainer.appendChild(gridSquare);
     }
     page_container.appendChild(gridRowContainer);
@@ -29,21 +33,21 @@ function rowPropagate() {
     }
 }
 
-// Runtime Code
-rowPropagate();
-addHoverListeners()
 
-// Add hover listeners too all squares
+// Add hover listeners to all squares
 function addHoverListeners() {
     const squares = document.querySelectorAll('.grid-square');
-    for (let i = 0; i <= squares.length; i++) {
+    for (let i = 0; i < squares.length; i++) {
         squares[i].addEventListener('mouseover', () => {
             squares[i].style.backgroundColor = 'red';
         });
         squares[i].addEventListener('mouseout', () => {
             squares[i].style.backgroundColor = '#BBBBBB';
-        })
+        });
     }
 }
 
-// TODO: Resize grids to fit
+// Runtime Code
+rowPropagate();
+addHoverListeners();
+
