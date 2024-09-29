@@ -16,7 +16,7 @@ function createGridRow() {
     const gridRowContainer = document.createElement('div');
     gridRowContainer.classList.add('grid-row-container');
     for (let i = 1; i <= grid_size; i++) {
-        let square_side = (0.7*window.innerHeight) / (grid_size);
+        let square_side = ((0.8*window.innerHeight) / (grid_size))-1.6;
         console.log(square_side);
         const gridSquare = document.createElement('div');
         gridSquare.classList.add('grid-square');
