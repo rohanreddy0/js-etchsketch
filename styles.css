@@ -47,3 +47,26 @@ body {
     transition: background-color 0s;
 }
 
+#footer {
+
+    background-color: #111111;
+}
+
+#github-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+#footer-text {
+    color: white;
+    padding: 10px;
+    margin: 0;
+    font-weight: 500;
+}
+
+#github-logo {
+    width: 25px;
+    height: 25px;
+}
